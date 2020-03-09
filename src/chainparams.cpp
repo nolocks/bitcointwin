@@ -64,9 +64,9 @@ public:
     CMainParams() {
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 210000;
-        consensus.BIP16Exception = uint256S("0x00000000000002dc756eebf4f49723ed8d30cc28a5f108eb94b1ba88ac4f9c22");
+        consensus.BIP16Exception = uint256S("0x00000000ffb67150691ddfc7baaff6fd3b01317cbfcaeffc93518fba228ab553");
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8");
+        consensus.BIP34Hash = uint256S("0x00000000ffb67150691ddfc7baaff6fd3b01317cbfcaeffc93518fba228ab553");
         consensus.BIP65Height = 0;
         consensus.BIP66Height = 0;
         consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
@@ -107,7 +107,7 @@ public:
         pchMessageStart[3] = 0xd9;
         nDefaultPort = 8333;
         nPruneAfterHeight = 100000;
-        m_assumed_blockchain_size = 1;
+        m_assumed_blockchain_size = 240;
         m_assumed_chain_state_size = 3;
 
         genesis = CreateGenesisBlock(1568926800, 594264405, 0x1d00ffff, 1, 50 * COIN);
@@ -157,9 +157,9 @@ public:
     CTestNetParams() {
         strNetworkID = "test";
         consensus.nSubsidyHalvingInterval = 210000;
-        consensus.BIP16Exception = uint256S("0x00000000dd30457c001f4095d208cc1296b0eed002427aa599874af7a432b105");
+        consensus.BIP16Exception = uint256S("0x00000000ffb67150691ddfc7baaff6fd3b01317cbfcaeffc93518fba228ab553");
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("0x0000000023b3a96d3484e5abb3755c413e7d41500f8e2a5c3f0dd01299cd8ef8");
+        consensus.BIP34Hash = uint256S("0x00000000ffb67150691ddfc7baaff6fd3b01317cbfcaeffc93518fba228ab553");
         consensus.BIP65Height = 0;
         consensus.BIP66Height = 0;
         consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
@@ -195,7 +195,7 @@ public:
         pchMessageStart[3] = 0x07;
         nDefaultPort = 18333;
         nPruneAfterHeight = 1000;
-        m_assumed_blockchain_size = 1;
+        m_assumed_blockchain_size = 30;
         m_assumed_chain_state_size = 2;
 
         genesis = CreateGenesisBlock(1568926800, 594264405, 0x1d00ffff, 1, 50 * COIN);
@@ -244,9 +244,9 @@ public:
     explicit CRegTestParams(const ArgsManager& args) {
         strNetworkID = "regtest";
         consensus.nSubsidyHalvingInterval = 150;
-        consensus.BIP16Exception = uint256S("0x00000000000002dc756eebf4f49723ed8d30cc28a5f108eb94b1ba88ac4f9c22");
+        consensus.BIP16Exception = uint256S("0x00000000ffb67150691ddfc7baaff6fd3b01317cbfcaeffc93518fba228ab553");
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8");
+        consensus.BIP34Hash = uint256S("0x00000000ffb67150691ddfc7baaff6fd3b01317cbfcaeffc93518fba228ab553");
         consensus.BIP65Height = 0;
         consensus.BIP66Height = 0;
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
